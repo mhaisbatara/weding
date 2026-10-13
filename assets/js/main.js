@@ -378,26 +378,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 10. GUESTBOOK / RSVP (LocalStorage)
+  // 10. GUESTBOOK / UCAPAN & DOA RESTU (LocalStorage)
   const rsvpForm = document.getElementById('rsvpForm');
   const wishesContainer = document.getElementById('wishesList');
 
   const defaultWishes = [
     {
       name: 'Rahmat Hidayat & Istri',
-      status: 'Hadir',
       message: 'Barakallahu lakum wa baraka alaikum wa jama\'a bainakuma fii khoir. Selamat menempuh lembaran baru Afiana dan mas Agus!',
       time: '15 menit yang lalu'
     },
     {
       name: 'Dinda Maharani Putri',
-      status: 'Hadir',
       message: 'Selamat berbahagia sahabat tersayang Afi & mas Agus! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah selamanya. Aamiin ya Rabb.',
       time: '1 jam yang lalu'
     },
     {
       name: 'Dimas Prasetyo',
-      status: 'Hadir',
       message: 'Lancar sampai hari H bro Agus & mba Afiana! Bahagia dan berkah selalu untuk keluarga kecil kalian.',
       time: '3 jam yang lalu'
     }
@@ -438,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
       wishDiv.innerHTML = `
         <div class="wish-header">
           <span class="wish-name">${escapeHTML(item.name)}</span>
-          <span class="wish-badge">${escapeHTML(item.status)}</span>
+          <span style="color: var(--accent-gold); font-size: 0.85rem;">🕊️</span>
         </div>
         <p class="wish-text">${escapeHTML(item.message)}</p>
         <span class="wish-time">${escapeHTML(item.time || 'Baru saja')}</span>
@@ -452,7 +449,6 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const nameInput = document.getElementById('rsvpName');
       const messageInput = document.getElementById('rsvpMessage');
-      const selectedStatus = document.querySelector('input[name="rsvpStatusRadio"]:checked');
 
       if (!nameInput.value.trim() || !messageInput.value.trim()) {
         showToast('Mohon lengkapi nama dan pesan doa');
@@ -461,7 +457,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const newWish = {
         name: nameInput.value.trim(),
-        status: selectedStatus ? selectedStatus.value : 'Hadir',
         message: messageInput.value.trim(),
         time: 'Baru saja'
       };
@@ -472,7 +467,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       renderWishes();
       rsvpForm.reset();
-      showToast('Alhamdulillah! Doa & konfirmasi kehadiran berhasil dikirim.');
+      showToast('Alhamdulillah! Doa restu berhasil dikirim.');
     });
 
     renderWishes();
