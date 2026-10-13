@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 900" preserveAspectRatio="none" fill="none">
+  <defs>
+    <!-- Right watercolor wash gradient -->
+    <linearGradient id="blobGradRight1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ded5c8" stop-opacity="0.85" />
+      <stop offset="35%" stop-color="#e6ded3" stop-opacity="0.75" />
+      <stop offset="70%" stop-color="#dfd6c9" stop-opacity="0.80" />
+      <stop offset="100%" stop-color="#d5cbbe" stop-opacity="0.70" />
+    </linearGradient>
+    <linearGradient id="blobGradRight2" x1="90%" y1="20%" x2="10%" y2="90%">
+      <stop offset="0%" stop-color="#e4dcd2" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#dcd3c6" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#cec3b4" stop-opacity="0.4" />
+    </linearGradient>
+    <filter id="waterBlurRight" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base organic right shape -->
+  <path d="M550,0 
+           L420,0 
+           C410,120 460,200 480,310 
+           C510,430 330,520 280,630 
+           C230,730 310,840 370,900 
+           L550,900 Z" 
+        fill="url(#blobGradRight1)" 
+        filter="url(#waterBlurRight)" />
+
+  <!-- Secondary organic wash layer -->
+  <path d="M550,50 
+           C460,110 470,220 500,320 
+           C525,410 370,510 320,620 
+           C270,720 330,830 410,900 
+           L550,900 Z" 
+        fill="url(#blobGradRight2)" />
+
+  <!-- Soft organic speckles on the right -->
+  <g fill="#c4b6a4" opacity="0.5">
+    <circle cx="340" cy="580" r="2.2" />
+    <circle cx="320" cy="610" r="3.1" />
+    <circle cx="355" cy="625" r="1.8" />
+    <circle cx="330" cy="650" r="2.5" />
+    <circle cx="370" cy="660" r="2" />
+    <circle cx="295" cy="670" r="2.8" />
+    <circle cx="315" cy="690" r="1.5" />
+    <circle cx="345" cy="700" r="3" />
+    <circle cx="365" cy="720" r="1.9" />
+    <circle cx="325" cy="735" r="2.4" />
+    
+    <!-- White highlights -->
+    <circle cx="335" cy="595" r="2.5" fill="#fff" opacity="0.45" />
+    <circle cx="310" cy="635" r="3.2" fill="#fff" opacity="0.4" />
+    <circle cx="350" cy="675" r="2" fill="#fff" opacity="0.4" />
+    <circle cx="335" cy="710" r="2.8" fill="#fff" opacity="0.45" />
+  </g>
+</svg>

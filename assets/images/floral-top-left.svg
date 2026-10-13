@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none" stroke="#685646" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Botanical Leaf Sprig (Top Left) -->
+  <defs>
+    <style>
+      .fine-line { stroke-width: 0.8; opacity: 0.65; }
+      .main-stroke { stroke-width: 1.5; }
+      .bold-stroke { stroke-width: 1.8; }
+      .leaf-fill { fill: #fbf9f5; }
+    </style>
+  </defs>
+
+  <!-- Stems extending downwards-right from top-left corner -->
+  <g class="main-stroke">
+    <!-- Main curving stem -->
+    <path d="M-10,-10 C40,70 90,170 110,270" class="bold-stroke" />
+    <path d="M110,270 C120,340 100,410 70,470" class="bold-stroke" />
+
+    <!-- Branch offshoots -->
+    <path d="M30,70 C70,90 120,120 160,160" />
+    <path d="M70,160 C110,180 150,210 180,260" />
+    <path d="M100,240 C140,260 170,300 190,350" />
+  </g>
+
+  <!-- LEAVES -->
+  <g id="top-left-leaves" class="main-stroke">
+    <!-- Leaf 1 (Top right offshoot) -->
+    <path d="M120,120 C160,110 200,135 220,170 C190,180 150,160 120,120 Z" class="leaf-fill" />
+    <path d="M130,128 C165,135 195,150 215,168" class="fine-line" />
+    <path d="M150,132 C170,128 190,132 195,138" class="fine-line" />
+
+    <!-- Leaf 2 (Upper left) -->
+    <path d="M35,65 C15,115 10,175 25,230 C45,185 55,125 40,75 Z" class="leaf-fill" />
+    <path d="M36,75 C25,125 20,175 26,220" class="fine-line" />
+
+    <!-- Leaf 3 (Middle branch right) -->
+    <path d="M140,195 C190,200 230,230 250,280 C210,285 170,255 140,195 Z" class="leaf-fill" />
+    <path d="M148,202 C190,215 225,245 245,275" class="fine-line" />
+
+    <!-- Leaf 4 (Main center arching leaf) -->
+    <path d="M85,190 C60,250 50,320 65,390 C85,335 100,265 90,200 Z" class="leaf-fill" />
+    <path d="M88,200 C72,260 65,325 66,380" class="fine-line" />
+    <path d="M78,250 C65,275 60,300 62,320" class="fine-line" />
+    <path d="M84,270 C92,295 95,320 90,340" class="fine-line" />
+
+    <!-- Leaf 5 (Lower right offshoot) -->
+    <path d="M155,275 C200,290 235,335 245,390 C205,385 175,345 155,275 Z" class="leaf-fill" />
+    <path d="M165,285 C200,310 225,350 238,382" class="fine-line" />
+
+    <!-- Leaf 6 (Lower stem tip) -->
+    <path d="M85,380 C70,430 45,475 10,510 C35,470 65,420 85,380 Z" class="leaf-fill" />
+    <path d="M80,390 C62,430 40,470 18,500" class="fine-line" />
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none" stroke="#685646" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Botanical Shaded Foliage Branch (Bottom Right) -->
+  <defs>
+    <style>
+      .fine-line { stroke-width: 0.9; opacity: 0.7; }
+      .main-stroke { stroke-width: 1.6; }
+      .bold-stroke { stroke-width: 2.0; }
+      .solid-leaf { fill: #9c8774; stroke: #685646; stroke-width: 1.5; }
+      .semi-leaf { fill: #b8a491; stroke: #685646; stroke-width: 1.4; opacity: 0.85; }
+      .outline-leaf { fill: #fbf9f5; stroke: #685646; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Main Branch curving upwards-left from bottom right corner -->
+  <g class="main-stroke">
+    <!-- Main stem -->
+    <path d="M510,510 C460,450 380,380 260,330" class="bold-stroke" />
+    <path d="M260,330 C190,300 120,290 50,300" class="bold-stroke" />
+    
+    <!-- Secondary sprig branches -->
+    <path d="M420,410 C360,430 300,470 270,510" />
+    <path d="M330,360 C270,390 220,440 180,490" />
+    <path d="M220,320 C180,340 140,370 110,410" />
+    <path d="M140,295 C110,310 80,330 50,360" />
+  </g>
+
+  <!-- LEAVES CLUSTER -->
+  <g id="foliage-leaves">
+    <!-- 1. Big Solid Shaded Leaf (Main Feature) -->
+    <path d="M380,390 C340,320 280,260 220,240 C240,290 280,350 340,390 Z" class="solid-leaf" />
+    <path d="M350,380 C300,320 260,270 230,248" stroke="#fbf9f5" class="fine-line" />
+    <path d="M310,345 C285,325 260,315 240,310" stroke="#fbf9f5" class="fine-line" />
+    <path d="M330,360 C305,350 285,345 265,340" stroke="#fbf9f5" class="fine-line" />
+
+    <!-- 2. Second Solid Shaded Leaf (Pointing Up-Left) -->
+    <path d="M310,350 C270,270 220,210 160,180 C180,230 220,300 280,345 Z" class="solid-leaf" />
+    <path d="M285,340 C235,275 195,225 170,192" stroke="#fbf9f5" class="fine-line" />
+    <path d="M250,300 C220,275 190,260 170,250" stroke="#fbf9f5" class="fine-line" />
+
+    <!-- 3. Third Shaded Leaf (Lower left) -->
+    <path d="M250,325 C200,270 140,240 80,230 C110,270 160,310 220,330 Z" class="semi-leaf" />
+    <path d="M230,325 C170,280 120,250 90,235" stroke="#fbf9f5" class="fine-line" />
+
+    <!-- 4. Terminal Leaf (Tip at far left) -->
+    <path d="M80,298 C50,290 15,295 -5,310 C15,318 45,315 80,305 Z" class="outline-leaf" />
+    <path d="M75,302 C45,302 20,305 2,308" class="fine-line" />
+
+    <!-- 5. Medium Outline Leaf (Top side) -->
+    <path d="M180,305 C140,270 95,260 40,265 C70,285 115,305 160,312 Z" class="outline-leaf" />
+    <path d="M165,308 C120,285 80,275 50,268" class="fine-line" />
+    <path d="M140,298 C115,282 95,280 75,280" class="fine-line" />
+
+    <!-- 6. Outline Leaf (Pointing Down-Left) -->
+    <path d="M190,330 C150,350 110,380 75,420 C105,400 145,370 180,342 Z" class="outline-leaf" />
+    <path d="M175,338 C140,365 110,390 85,412" class="fine-line" />
+
+    <!-- 7. Solid Leaf (Lower middle) -->
+    <path d="M280,380 C240,410 190,440 140,470 C175,455 220,430 265,395 Z" class="solid-leaf" />
+    <path d="M265,390 C220,425 180,450 150,465" stroke="#fbf9f5" class="fine-line" />
+
+    <!-- 8. Outer branch foliage sprig -->
+    <path d="M370,430 C320,460 270,490 220,510 C260,495 305,470 350,442 Z" class="outline-leaf" />
+
+    <!-- 9. Shaded bud leaf near corner -->
+    <path d="M440,450 C410,400 370,370 320,350 C350,390 390,430 425,465 Z" class="semi-leaf" />
+  </g>
+
+  <!-- Fine sprig twigs and berries -->
+  <g class="main-stroke">
+    <circle cx="210" cy="225" r="3.5" class="outline-leaf" />
+    <circle cx="150" cy="170" r="3" class="outline-leaf" />
+    <circle cx="65" cy="220" r="3" class="outline-leaf" />
+    <path d="M150,170 C140,155 125,160 130,175 Z" class="outline-leaf" />
+  </g>
+</svg>

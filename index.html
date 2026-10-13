@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Afiana & Agus</title>
+  <meta name="description" content="Undangan Pernikahan Afiana & Agus - Jumat, 16 Oktober 2026">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-cover">
+
+  <!-- Floating Falling Petals -->
+  <div class="petals-container" id="petalsContainer"></div>
+
+  <!-- ========================================================
+       COVER / LANDING PAGE (Sesuai Referensi Gambar)
+       ======================================================== -->
+  <main class="hero-cover" id="heroCover">
+    <!-- Watercolor Organic Background Blobs -->
+    <div class="blob-bg blob-left" aria-hidden="true"></div>
+    <div class="blob-bg blob-right" aria-hidden="true"></div>
+
+    <!-- Botanical Line Art Corners -->
+    <img src="assets/images/floral-top-left.svg" alt="" class="botanical-art floral-tl" aria-hidden="true">
+    <img src="assets/images/floral-bottom-left.svg" alt="" class="botanical-art floral-bl" aria-hidden="true">
+    <img src="assets/images/floral-top-right.svg" alt="" class="botanical-art floral-tr" aria-hidden="true">
+    <img src="assets/images/floral-bottom-right.svg" alt="" class="botanical-art floral-br" aria-hidden="true">
+
+    <!-- Center Content -->
+    <div class="hero-content">
+      <p class="invitation-subtitle">Undangan Pernikahan</p>
+      
+      <!-- Greeting to Guest (Dynamic: e.g. ?to=Nama+Tamu) -->
+      <div class="guest-greeting" id="guestGreeting">
+        <span>Kepada Yth. Bapak/Ibu/Saudara/i:</span>
+        <span class="guest-name" id="guestNameDisplay">Tamu Undangan</span>
+      </div>
+
+      <!-- Couple Names -->
+      <h1 class="couple-names">Afiana-Agus</h1>
+
+      <!-- Wedding Date -->
+      <div class="wedding-date-block">
+        <span class="date-day-name">Jumat</span>
+        <div class="date-divider"></div>
+        <div class="date-center">
+          <span class="date-number">16</span>
+          <span class="date-year">2026</span>
+        </div>
+        <div class="date-divider"></div>
+        <span class="date-month-name">Oktober</span>
+      </div>
+
+      <!-- Button Buka Undangan -->
+      <button type="button" class="btn-open-invitation" id="btnOpenInvitation">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span>Buka Undangan</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- ========================================================
+       3D ENVELOPE OPENING ANIMATION OVERLAY
+       ======================================================== -->
+  <div class="envelope-overlay" id="envelopeOverlay">
+    <div class="envelope-wrapper">
+      <div class="envelope-box" id="envelopeBox">
+        <div class="envelope-flap"></div>
+        <div class="wax-seal">A &amp; A</div>
+        <div class="envelope-letter">
+          <span class="envelope-letter-title">The Wedding of</span>
+          <h2 class="envelope-letter-names">Afiana &amp; Agus</h2>
+          <span class="envelope-letter-date">Jumat, 16 Oktober 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

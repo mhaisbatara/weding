@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none" stroke="#685646" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Botanical Lily Flower and Floral Sprigs (Top Right) -->
+  <defs>
+    <style>
+      .fine-line { stroke-width: 0.8; opacity: 0.65; }
+      .main-stroke { stroke-width: 1.5; }
+      .bold-stroke { stroke-width: 1.8; }
+      .leaf-fill { fill: #fbf9f5; }
+    </style>
+  </defs>
+
+  <!-- Branches extending from upper right corner -->
+  <g class="main-stroke">
+    <!-- Main stem to central flower -->
+    <path d="M510,-10 C440,40 380,80 340,140" />
+    <!-- Secondary sprig to buds on left -->
+    <path d="M380,40 C320,30 260,25 210,35" />
+    <!-- Eucalyptus / berry sprig to bottom right -->
+    <path d="M460,80 C480,150 490,220 480,280" />
+    <path d="M480,280 C475,340 450,400 420,440" />
+  </g>
+
+  <!-- Berries / Small buds on left branch -->
+  <g class="main-stroke">
+    <!-- Branch 1 buds -->
+    <circle cx="210" cy="35" r="4.5" class="leaf-fill" />
+    <circle cx="235" cy="22" r="3.5" class="leaf-fill" />
+    <circle cx="260" cy="18" r="4" class="leaf-fill" />
+    
+    <!-- Delicate bud leaves -->
+    <path d="M250,25 C230,10 215,20 220,35 Z" class="leaf-fill" />
+    <path d="M290,30 C275,15 260,30 270,40 Z" class="leaf-fill" />
+    <path d="M315,35 C300,10 280,20 295,38 Z" class="leaf-fill" />
+  </g>
+
+  <!-- Eucalyptus / foliage sprig (Far Right) -->
+  <g class="main-stroke">
+    <!-- Leaf 1 -->
+    <path d="M470,120 C495,110 515,130 505,150 C490,165 470,145 470,120 Z" class="leaf-fill" />
+    <path d="M480,130 C495,135 500,145 500,145" class="fine-line" />
+
+    <!-- Leaf 2 -->
+    <path d="M480,180 C505,170 520,195 510,215 C495,225 475,205 480,180 Z" class="leaf-fill" />
+    
+    <!-- Leaf 3 -->
+    <path d="M485,240 C510,230 518,260 505,275 C485,285 475,265 485,240 Z" class="leaf-fill" />
+
+    <!-- Leaf 4 -->
+    <path d="M475,290 C495,290 505,320 490,335 C470,345 460,320 475,290 Z" class="leaf-fill" />
+
+    <!-- Leaf 5 -->
+    <path d="M455,350 C475,355 480,385 465,400 C445,410 440,380 455,350 Z" class="leaf-fill" />
+  </g>
+
+  <!-- LILY FLOWER (Main Blooming Star - Top Right) -->
+  <g id="lily-top-right">
+    <!-- Center reference: (340, 140) -->
+
+    <!-- PETAL 1: Pointing Top-Left -->
+    <path d="M335,130 C290,80 230,50 170,40 C195,75 250,115 320,135 Z" class="leaf-fill bold-stroke" />
+    <!-- Petal 1 veins -->
+    <path d="M330,132 C275,85 225,65 180,48" class="fine-line" />
+    <path d="M285,100 C265,85 240,80 220,75" class="fine-line" />
+    <path d="M295,115 C275,110 250,105 230,100" class="fine-line" />
+
+    <!-- PETAL 2: Pointing Left-Down -->
+    <path d="M325,145 C270,170 200,210 145,265 C175,260 235,220 315,155 Z" class="leaf-fill bold-stroke" />
+    <!-- Petal 2 veins -->
+    <path d="M320,150 C265,190 215,225 158,260" class="fine-line" />
+    <path d="M275,178 C250,195 230,215 205,235" class="fine-line" />
+    <path d="M288,165 C270,175 250,185 230,195" class="fine-line" />
+
+    <!-- PETAL 3: Pointing Bottom -->
+    <path d="M335,155 C320,225 315,290 325,360 C350,300 365,230 355,155 Z" class="leaf-fill bold-stroke" />
+    <!-- Petal 3 veins -->
+    <path d="M342,158 C332,230 328,290 326,345" class="fine-line" />
+    <path d="M340,215 C330,240 322,270 324,295" class="fine-line" />
+    <path d="M350,215 C355,245 358,275 350,300" class="fine-line" />
+
+    <!-- PETAL 4: Pointing Bottom-Right -->
+    <path d="M350,150 C395,200 440,245 500,270 C475,225 435,175 365,140 Z" class="leaf-fill bold-stroke" />
+    <!-- Petal 4 veins -->
+    <path d="M355,148 C410,195 450,230 490,260" class="fine-line" />
+    <path d="M390,170 C410,185 435,195 460,205" class="fine-line" />
+
+    <!-- PETAL 5: Pointing Top-Right -->
+    <path d="M355,130 C410,105 460,75 510,40 C465,55 415,80 350,120 Z" class="leaf-fill bold-stroke" />
+    <!-- Petal 5 veins -->
+    <path d="M355,125 C415,95 460,70 500,45" class="fine-line" />
+
+    <!-- PETAL 6: Pointing Top -->
+    <path d="M345,125 C350,70 360,20 380,-30 C360,20 340,65 335,120 Z" class="leaf-fill bold-stroke" />
+
+    <!-- Stamens and Pistil (Extending towards bottom-left) -->
+    <g class="bold-stroke">
+      <!-- Stamen 1 -->
+      <path d="M335,145 C305,170 270,195 240,205" />
+      <ellipse cx="236" cy="207" rx="4" ry="2" transform="rotate(-30 236 207)" fill="#685646" />
+
+      <!-- Stamen 2 -->
+      <path d="M338,148 C320,185 295,220 270,245" />
+      <ellipse cx="266" cy="248" rx="4" ry="2" transform="rotate(30 266 248)" fill="#685646" />
+
+      <!-- Stamen 3 -->
+      <path d="M340,147 C345,195 350,235 348,270" />
+      <ellipse cx="348" cy="274" rx="4" ry="2" transform="rotate(80 348 274)" fill="#685646" />
+
+      <!-- Stamen 4 -->
+      <path d="M336,142 C300,150 260,155 225,150" />
+      <ellipse cx="220" cy="150" rx="4" ry="2" transform="rotate(-5 220 150)" fill="#685646" />
+
+      <!-- Pistil (Stigma) -->
+      <path d="M338,145 C310,180 275,225 245,255" stroke-width="2.2" />
+      <circle cx="243" cy="257" r="3.5" fill="#685646" />
+    </g>
+
+    <!-- Center stippling -->
+    <g fill="#685646">
+      <circle cx="338" cy="142" r="1.2" />
+      <circle cx="342" cy="138" r="1" />
+      <circle cx="334" cy="146" r="1.1" />
+      <circle cx="345" cy="145" r="0.9" />
+      <circle cx="330" cy="140" r="1.2" />
+      <circle cx="346" cy="135" r="0.8" />
+    </g>
+  </g>
+</svg>
